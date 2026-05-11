@@ -1,6 +1,6 @@
 This is a weather station project with ESP32-C6, BME280 and ILI9341 LCD.
 
-** UNDER CONSTRUCTION **
+#** UNDER CONSTRUCTION **
 
 Connections (https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#getting-started)
 

@@ -9,6 +9,6 @@ idf_component_register(
         esp_event
         esp_netif
         nvs_flash
-        esp_http_server   # optional, list the public requirements (component names)
+        esp_http_client   # optional, list the public requirements (component names)
     PRIV_REQUIRES       # optional, list the private requirements
 )
