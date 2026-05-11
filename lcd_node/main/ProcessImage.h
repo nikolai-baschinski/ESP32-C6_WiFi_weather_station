@@ -1,0 +1,20 @@
+// The process image contains data of the process
+// There can't exist loose data- Each data belongs logically to a module
+#ifndef PROCESSIMAGE_H_
+#define PROCESSIMAGE_H_
+
+#include <stdio.h>
+
+struct BME280_for_LCD {
+  float temperature;
+  uint16_t pressure;
+  uint8_t humidity;
+};
+
+
+struct ProcessImage {
+  struct BME280_for_LCD bme280;
+  struct BME280_for_LCD bme280_memory;
+};
+
+#endif /* PROCESSIMAGE_H_ */
