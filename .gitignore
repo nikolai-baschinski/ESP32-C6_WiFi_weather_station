@@ -1,0 +1,4 @@
+bme280_node/build
+lcd_node/build
+bme280_node/sdkconfig.old
+lcd_node/sdkconfig.old

@@ -1,0 +1,6 @@
+CompileFlags:
+  CompilationDatabase: C:\Daten\proj\ESP32-C6_WiFi_weather_station\bme280_node\build
+  Remove: [-m*, -f*]
+InlayHints: {Enabled: false}
+Diagnostics:
+  Suppress: [unused-includes]
