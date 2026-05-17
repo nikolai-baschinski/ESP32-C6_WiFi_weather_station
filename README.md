@@ -1,6 +1,11 @@
-This is a weather station project with ESP32-C6, BME280 and ILI9341 LCD.
+*This is a weather station project with ESP32-C6, BME280 and ILI9341 LCD.*
 
-# ** UNDER CONSTRUCTION **
+![](/doc/IMG_5289.jpg)
+
+![](/doc/IMG_5290.jpg)
+
+![](/doc/block_diagramm.png)
+
 
 Connections (https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#getting-started)
 
@@ -34,3 +39,11 @@ BME280: https://seengreat.com/product/207/bme280-environmental-sensor?srsltid=Af
 LCD: https://www.waveshare.com/wiki/2.4inch_LCD_Module?srsltid=AfmBOoqtv3bq-mZfPtsi2BxiewwQnIkomXrloIzpVwGw_HnrOcmvQZar
 
 ESP32-C6-DevKitC-1: https://www.reichelt.de/de/de/shop/produkt/entwicklungsboard_esp32-c6-wroom-1_u-380385
+
+1. Clone
+2. Import the bme280-node and the lcd projects separately in the Espressif IDE
+3. Change the Router SSID, the passwort and the LCD node IP in the wifi.c
+4. Build
+5. Flash
+6. Ping both nodes from your PC
+7. Test with POST request (test folder)

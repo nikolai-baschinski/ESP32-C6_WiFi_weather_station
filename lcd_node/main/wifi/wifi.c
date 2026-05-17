@@ -19,8 +19,9 @@
 #include "wifi.h"
 #include "../ProcessImage.h"
 
-#define WIFI_SSID      "FRITZ!Box 7530 UTR" // TODO
-#define WIFI_PASSWORD  "54960167273"  // TODO
+#define WIFI_SSID      "SSID" // TODO
+#define WIFI_PASSWORD  "PASSWORD"  // TODO
+#define MY_HOST_NAME   "esp-lcd-node"
 
 struct ProcessImage* p_pi = nullptr;
 static const char *TAG = "HTTP_SERVER";
@@ -137,7 +138,7 @@ static void wifi_init_sta(void)
   ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL,NULL));
   ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL, NULL));
 
-  ESP_ERROR_CHECK(esp_netif_set_hostname(netif, "esp-lcd-node"));
+  ESP_ERROR_CHECK(esp_netif_set_hostname(netif, MY_HOST_NAME));
 
   /* WiFi config */
   wifi_config_t wifi_config = {

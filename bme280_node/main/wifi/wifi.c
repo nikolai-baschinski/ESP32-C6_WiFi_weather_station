@@ -17,10 +17,10 @@
 #include "wifi.h"
 #include "../ProcessImage.h"
 
-#define WIFI_SSID      "Your SSID" // TODO
-#define WIFI_PASSWORD  "password"  // TODO
-
-#define LCD_NODE_URL   "http://esp-display.local/environment"
+#define WIFI_SSID      "FRITZ!Box 7530 UTR" // TODO
+#define WIFI_PASSWORD  "54960167273"  // TODO
+#define MY_HOST_NAME   "esp-bme280-node"
+#define LCD_NODE_URL   "http://192.168.178.34/environment" // TODO
 
 struct ProcessImage* p_pi = nullptr;
 
@@ -105,7 +105,7 @@ static void wifi_init_sta(void)
 
   ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL, NULL));
 
-  ESP_ERROR_CHECK(esp_netif_set_hostname(netif, "esp-bme280"));
+  ESP_ERROR_CHECK(esp_netif_set_hostname(netif, MY_HOST_NAME));
 
   /* WiFi config */
   wifi_config_t wifi_config = {

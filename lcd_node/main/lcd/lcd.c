@@ -323,19 +323,19 @@ void cyclic_LCD(struct ProcessImage* p_pi)
   int8_t n_mem = (int8_t)((p_pi->bme280_memory.temperature - g_mem) * 10);
 
   if(g != g_mem || n != n_mem) {
-    ESP_LOGI("", "Task_LCD: Writing temperature Old value: %d,%d. New value: %d,%d.\n", g_mem, n_mem, g, n);
+    ESP_LOGI("", "Task_LCD: Writing temperature Old value: %d,%d. New value: %d,%d.", g_mem, n_mem, g, n);
     Paint_ClearWindows(180, 30, 180+17*5, 50, WHITE);
     Paint_DrawFloatNum(180, 30, p_pi->bme280.temperature, 1, &Font24, WHITE, BLACK);
   }
 
   if(p_pi->bme280.pressure != p_pi->bme280_memory.pressure) {
-    ESP_LOGI("", "Task_LCD: Writing air pressure. Old value: %d. New value: %d\n", p_pi->bme280_memory.pressure, p_pi->bme280.pressure);
+    ESP_LOGI("", "Task_LCD: Writing air pressure. Old value: %d. New value: %d", p_pi->bme280_memory.pressure, p_pi->bme280.pressure);
     Paint_ClearWindows(180, 60, 180+17*4, 80, WHITE);
     Paint_DrawNum(180, 60, p_pi->bme280.pressure, &Font24, WHITE, BLACK);
   }
 
   if(p_pi->bme280.humidity != p_pi->bme280_memory.humidity) {
-    ESP_LOGI("", "Task_LCD: Writing humidity Old value: %d. New value: %d\n", p_pi->bme280_memory.humidity, p_pi->bme280.humidity);
+    ESP_LOGI("", "Task_LCD: Writing humidity Old value: %d. New value: %d", p_pi->bme280_memory.humidity, p_pi->bme280.humidity);
     Paint_ClearWindows(180, 90, 180+17*3, 110, WHITE);
     Paint_DrawNum(180, 90, p_pi->bme280.humidity, &Font24, WHITE, BLACK);
   }

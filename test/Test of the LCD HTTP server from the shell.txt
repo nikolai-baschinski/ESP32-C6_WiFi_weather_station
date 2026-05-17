@@ -1,0 +1,1 @@
+Invoke-RestMethod -Uri "http://esp-lcd-node.local/environment" -Method POST -ContentType "application/json" -Body '{"temperature":22.4,"pressure":1009,"humidity":48}'
