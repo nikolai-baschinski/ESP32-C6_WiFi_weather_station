@@ -1,4 +1,4 @@
-*This is a weather station project with ESP32-C6, BME280 and ILI9341 LCD.*
+# This is a weather station project with ESP32-C6, BME280 and ILI9341 LCD.*
 
 ![](/doc/IMG_5289.jpg)
 
