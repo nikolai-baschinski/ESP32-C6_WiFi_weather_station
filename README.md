@@ -12,8 +12,8 @@ Connections (https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/
 
 | LCD Pin | ESP32-C6 GPIO | Function     |
 | ------- | --------------| ------------ |
-| VCC     | 3.3V          | Versorgung   |
-| GND     | GND           | Masse        |
+| VCC     | 3.3V          | Vcc          |
+| GND     | GND           | GND          |
 | DIN     | GPIO7         | MOSI         |
 | CLK     | GPIO6         | SCLK         |
 | CS      | GPIO10        | Chip Select  |

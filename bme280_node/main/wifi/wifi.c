@@ -17,8 +17,8 @@
 #include "wifi.h"
 #include "../ProcessImage.h"
 
-#define WIFI_SSID      "FRITZ!Box 7530 UTR" // TODO
-#define WIFI_PASSWORD  "54960167273"  // TODO
+#define WIFI_SSID      "SSID" // TODO
+#define WIFI_PASSWORD  "PASSWORD"  // TODO
 #define MY_HOST_NAME   "esp-bme280-node"
 #define LCD_NODE_URL   "http://192.168.178.34/environment" // TODO
 
